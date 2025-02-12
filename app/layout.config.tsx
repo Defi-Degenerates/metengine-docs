@@ -15,17 +15,17 @@ export const baseOptions: BaseLayoutProps = {
   links: [
     {
       text: 'Documentation',
-      url: '/docs',
+      url: '/',
       active: 'nested-url',
     },
     {
       text: 'FAQs',
-      url: '/docs/faqs',
+      url: '/faqs',
       active: 'nested-url',
     },
     {
       text: 'Bot-Commands',
-      url: '/docs/commands',
+      url: '/commands',
       active: 'nested-url',
     },
   ],
