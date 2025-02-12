@@ -7,15 +7,38 @@ description: FAQs
 When you enter a token address to DLMM, the bot automatically swaps 50% of your SOL to the token you provided through Jupiter to get the best price and when you close, it swaps the tokens+fees generated back to SOL.
 </Card>
 
-<Card title="What is the strategy of open position ?">
-Currently the bot enters a pool with 60 bin step and a base Fee of 1%.
+<Card title="What is the strategy used when opening a position?">
+Currently the bot enters a pool with best 24 hrs Yield .
 </Card>
 
-<Card title="How much Sol should i send to get it started with ?">
+<Card title="How much Sol should I send to get started with it?">
 We recommend a minimum of 0.2 SOL to load up initially as opening a meterora position, takes 0.05 SOL in rent.
 </Card>
 
 <Card title="Is my wallet safe ?">
 Your private keys are self custodial and you can export your private keys to any wallets of your choice. 
 </Card>
+
+<Card title="Can I customize the strategy parameters?">
+Strategy parameter optimization is expected in upcoming versions of the bot. We’re actively working on making these settings more flexible based on user needs. 
+</Card>
+
+<Card title="Does the bot work with all tokens?">
+The bot supports all tokens that Meteora can ape into. However, Token 2022/Token Extension standards are not supported by Meteora, so they are also not supported by our bot. Other than that, we have no additional limitations on supported tokens. 
+</Card>
+
+<Card title="Are there any additional fees besides the initial SOL requirement?">
+There are no additional fees at the moment. The cost is equivalent to what any user would pay when using Jupiter and Meteora directly, and the fees depend on those platforms.
+
+We do use market priority fees as required, leveraging RPCs and Jito tips to ensure better transaction execution. However, there are no hidden fees anywhere in the bot.
+</Card>
+
+<Card title="What is the Honk Index?">
+The Honk Index is a market tracker that measures fear and greed sentiment, helping you decide whether it’s a good time to provide liquidity. [Read more about it here](https://chatgpt.com/c/67aaf9de-7134-800e-9fea-d8fb1161a687#).
+</Card>
+
+<Card title="Is copy-trade automation available?">
+Copy-trade automation is not available yet, but we are actively working on it. This is an infrastructure-level issue, and we are exploring how to implement it based on community feedback. If there’s strong demand, we’ll prioritize its development.
+</Card>
+
 </Cards>
