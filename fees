@@ -1,0 +1,17 @@
+Bonk Bot takes 1 % fees on each Tx and distributes it amoung various entities
+No Fees on deposits
+
+1 % on every swap tx ( eg if a user is creating a position of 100$ then 50$ will be swapped to token X,we take 0.5 $ in fees)
+Lping is free
+when user closes position and swaps back to sol,we take same 1 % fees there
+No fees in profit or loss
+
+10% of fees generated in a month goes to burning/staking M3M3.
+
+For every 100$ we earn 1$ in fees.
+Expect a user to do 2 trades,2$ in fees per day
+expect a user to use the bot 15 days, thats 30$ in fees per user
+if we have 100 users with same capital
+we generate 3000$ in fees
+
+now if we consider 1000$,then it's an extra zero,30,000$/month.
