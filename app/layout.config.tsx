@@ -13,25 +13,6 @@ export const baseOptions: BaseLayoutProps = {
     title: 'Met-Engine',
   },
   links: [
-    {
-      text: 'Documentation',
-      url: '/',
-      active: 'nested-url',
-    },
-    {
-      text: 'Get Started',
-      url: '/getstarted',
-      active: 'nested-url',
-    },
-    {
-      text: 'FAQs',
-      url: '/faqs',
-      active: 'nested-url',
-    },
-    {
-      text: 'Bot-Commands',
-      url: '/commands',
-      active: 'nested-url',
-    },
+
   ],
 };
