@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "MetEngine is a Telegram bot that allows you to create instant DLMM (Dynamic Liquidity Market Making) positions and track them in real-time. It lets you Auto-Copy one wallet’s LP positions with millisecond-level precision. Set it once, and every move they make is mirrored automatically - no clicks",
   keywords:
-    "DLMM, Solana, DeFi, Met, Metengine, Liquidity, Auto copy trade, LP, LP Telegram Bot, auto copy LP, liquidity providing, liquidity providing on solana, Meteora, Jupiter",
+    "DLMM, Solana, DeFi, Met, Metengine, Metengine docs, Liquidity, Auto copy trade, LP, LP Telegram Bot, auto copy LP, liquidity providing, liquidity providing on solana, Meteora, Jupiter",
   authors: [{ name: "MetEngine" }],
   category: "DeFi",
   metadataBase: new URL("https://docs.metengine.xyz"),
