@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "MetEngine is a Telegram bot that allows you to create instant DLMM (Dynamic Liquidity Market Making) positions and track them in real-time. It lets you Auto-Copy one wallet’s LP positions with millisecond-level precision. Set it once, and every move they make is mirrored automatically - no clicks",
   keywords:
-    "DLMM, Solana, DeFi, Met, Metengine, Metengine docs, Liquidity, Auto copy trade, LP, LP Telegram Bot, auto copy LP, liquidity providing, liquidity providing on solana, Meteora, Jupiter",
+    "MetEngine Docs Solana, DLMM, Solana, DeFi, Met, Met engine, Met engine docs, Metengine, Metengine docs, Liquidity, Auto copy trade, LP, LP Telegram Bot, auto copy LP, copy lp, liquidity providing, liquidity providing on solana, Meteora, Jupiter",
   authors: [{ name: "MetEngine" }],
   category: "DeFi",
   metadataBase: new URL("https://docs.metengine.xyz"),
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "MetEngine Docs - One-click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
+      "MetEngine Docs",
     description:
-      "MetEngine is a Telegram bot that allows you to create instant DLMM (Dynamic Liquidity Market Making) positions and track them in real-time. It lets you Auto-Copy one wallet’s LP positions with millisecond-level precision. Set it once, and every move they make is mirrored automatically - no clicks",
+      "One-click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
     url: "https://docs.metengine.xyz",
     siteName: "MetEngine",
     images: [
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "MetEngine Docs - One-click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
+      "MetEngine Docs",
     description:
-      "MetEngine is a Telegram bot that allows you to create instant DLMM (Dynamic Liquidity Market Making) positions and track them in real-time. It lets you Auto-Copy one wallet’s LP positions with millisecond-level precision. Set it once, and every move they make is mirrored automatically - no clicks",
+      "One-click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
     images: ["/met.jpeg"],
   },
   icons: {
