@@ -2,49 +2,70 @@
 title: FAQs
 description: FAQs
 ---
+# Frequently Asked Questions
 
-<Cards>
-<Card title="What does an open/close position mean and should i swap the token individually?">
-When you enter a token address to DLMM, the bot automatically swaps 50% of your SOL to the token you provided through Jupiter to get the best price and when you close, it swaps the tokens+fees generated back to SOL.
-</Card>
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', gap: '20px' }}>
 
-<Card title="How much Fees does Met Engine charges?">
-Auto Copy Lping is **Free**. We charge 1.5% on Manually opening an LP position through met engine(50% shared with patner), refer this for more info [Fees Structure](https://docs.metengine.xyz/docs/fees-structure)
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### What does an open/close position mean and should I swap the token manually?
+When you enter a token address into DLMM, the bot automatically swaps 50% of your SOL to the specified token using Jupiter for optimal pricing. When closing the position, it swaps the tokens and any generated fees back to SOL.
+</div>
 
-<Card title="How much Sol should I send to get started with it?">
-We recommend a minimum of 0.2 SOL to load up initially as opening a meterora position, takes 0.05 SOL in rent.
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### How much does Met Engine charge?
+Auto Copy LPing is **free**. We charge a 1.5% fee on manually opened LP positions via Met Engine (50% of which is shared with our partners). For more details, refer to our [Fee Structure](#).
+</div>
 
-<Card title="Is my wallet safe ?">
-Your private keys are self custodial and you can export your private keys to any wallets of your choice. 
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### How much SOL should I send to get started?
+We recommend loading at **least 0.2 SOL** initially. Opening a position on Meteora requires approximately 0.05 SOL as rent.
+</div>
 
-<Card title="The bot created a position of 0.93 SOL but I had set the preset as 1 SOL">
-Meteora charges 0.05 SOL as rent which is refundable once the position is closed and some sol might be used in swapping and tx fees.
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### Is my wallet safe?
+Yes, your wallet is self-custodial. You have full control over your private keys and can export them to use in any compatible wallet.
+</div>
 
-<Card title="How many wallets can I track using MetEngine?">
-3 wallets.
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### The bot created a position slightly lower than expected
+Meteora charges 0.05 SOL as refundable rent. Additionally, small amounts of SOL may be used for transaction fees and token swaps, which can result in a position slightly lower than the amount you preset.
+</div>
 
-<Card title="How does MetEngine tracks wallets?">
-The bot copies all positions with preset amount of the **Primary wallet** and tracks their and 2 other wallet's open and close positions.
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### How many wallets can I track with Met Engine?
+You can track up to 3 wallets simultaneously.
+</div>
 
-<Card title="What stratigies are supported?">
-Currently we support Spot,BidAsk and Curve strategy on manual Lping. The Auto LP feature will copy any strategy taken by the copying wallet,eg. AST.
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### How does Met Engine track wallets?
+The bot tracks all positions made by your primary wallet (copied with a preset SOL amount), and monitors positions taken by two additional wallets.
+</div>
 
-<Card title="Does the bot work with all tokens,does it support token 22?">
-Yes,the bot supports all tokens that Meteora can ape into. y our bot.
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### What strategies are supported?
+We currently support Spot, BidAsk, and Curve strategies for manual LPing. The Auto LP feature can copy any strategy used by the primary wallet, including strategies like AST.
+</div>
 
-<Card title="Are there any additional fees besides the initial SOL requirement?">
-There are no additional fees at the moment. The cost is equivalent to what any user would pay when using Jupiter and Meteora directly, and the fees depend on those platforms.
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### Does the bot support all tokens, including token 22?
+Yes, the bot supports all tokens that Meteora supports for liquidity provisioning.
+</div>
 
-We do use market priority fees as required, leveraging RPCs and Jito tips to ensure better transaction execution. However, there are no hidden fees anywhere in the bot.
-</Card>
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### Are there any additional fees beyond the SOL requirement?
+There are no hidden fees. You only pay standard Jupiter and Meteora fees as applicable. We sometimes apply market-priority fees (e.g., Jito tips) for faster transaction execution, but you won’t be charged anything extra by Met Engine.
+</div>
 
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### How do I import my private key?
+You can export your private key from the bot by using the `/export` command. Keep this key safe and never share it. To import it into a wallet app like Phantom or Solflare:
 
-</Cards>
+<ol>
+  <li>Open your wallet app.</li>
+  <li>Choose "Import Wallet" or "Restore from private key."</li>
+  <li>Paste the exported private key.</li>
+  <li>Follow on-screen instructions to complete setup.</li>
+</ol>
+</div>
+
+</div>
