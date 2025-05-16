@@ -3,3 +3,11 @@
 @import 'fumadocs-ui/css/preset.css';
 
 @source '../node_modules/fumadocs-ui/dist/**/*.js';
+
+:root {
+    --color-fd-background: hsl(0, 0%, 100%);
+  }
+  
+  .dark {
+    --color-fd-background: hsl(0, 0.00%, 0.00%);
+  }

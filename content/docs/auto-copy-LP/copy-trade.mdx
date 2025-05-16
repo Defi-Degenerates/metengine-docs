@@ -1,9 +1,6 @@
 ---
 title: Auto Copy LP Positions
-description: Copying LP positions becomes easier then ever. ☄️
 ---
-## ⚡**Auto CopyLping (Now Live) with ZERO FEES**
-<Callout> Zero fees on Opening/Closing LP position,swaps(Jupiter takes 0.1% for Ultra swaps) or fees earned by Lping till we are in beta.</Callout>
 
 Met Engine now lets you Auto-Copy one wallet’s LP positions in real time with **millisecond-level precision**. 
 Set it once, and every move they make is mirrored automatically - no clicks, no lag.
@@ -27,7 +24,7 @@ Read the on-screen instructions and click the `Add Wallet` button.
 <img src="../../../cp2.png" alt="A wild meteor" width="500" height="500"></img>
 Repeat the same steps to add more wallets.<br/>
 ## **Step 3: Enter Wallet Details**
-Add a wallet using this format:  
+Add any wallet you'd like to track using this format:  
 **`WalletName WalletAddress`**  
 For example: `AlphaWallet 5F3sa2TJ...`
 
@@ -35,18 +32,28 @@ For example: `AlphaWallet 5F3sa2TJ...`
 ## **Step 4: Set a Primary Wallet**
 Tap the ✅ icon next to the wallet you want to auto-copy. This will mark it as your primary wallet to mirror.
 <img src="../../../cp4.png" alt="A wild meteor" width="500" height="500"></img>
-- You will receive LP notifications(Open position and close position) whenever the other 2 wallets take any `LP position`.
+- You will receive LP notifications (open/close position) when any of your tracked wallets take any `LP positions`.
+- MetEngine will only copy LP positions from the wallet you've marked as primary.
 
-## **Step 5: Set a Custom SOL amount **
-- Set the No. of SOL **Each position** should use on LP position.
-- Eg : You set Custom SOl as 5 SOL with balance of 20 SOL,whenever the primary wallet will take any position then the bot will copy those with 5 SOL.
-- Contd. The primary wallet takes 10 positions with 1 sol each then our bot copy first 2 positions with 5 SOL each.
-- **Setting Custom SOL is mandatory evertime you add a new wallet.**
-## ✅ You're All Set!
+## Step 5: Set a Custom SOL amount
+Set the amount of SOL that should be used for each LP position. 
 
-Whenever your **primary wallet** opens a new LP position, MetEngine will automatically:
+Example: 
+If you set the custom amount as 5 SOL and your balance is 20 SOL, whenever your primary wallet opens a position, MetEngine will mirror it using 5 SOL.
+- If the primary wallet opens 10 positions with 1 SOL each, your bot will copy the first 2 with 5 SOL each.
+- Setting your custom SOL amount is required each time you add a new wallet.
 
-- Open the same position for you using **your custom set amount**
+## **Step 6: Stop Copy Trading (Optional)**
+Click on the `Stop Copy trade` button to stop copying trades from the primary wallet.<br/>  
+This will disable copy trading but allow you to continue receiving LP position notifications from added wallets.
+
+<img src="../../../cp5.png" alt="A wild meteor" width="500" height="500"></img>
+
+✅ You're All Set!
+
+Once your **primary wallet** opens a new LP position, MetEngine will automatically:
+
+- Open the same position for you using **your preset SOL amount**
 - Close your position as soon as the primary wallet closes theirs
 
-> 💡 **Note:** Only primary wallet's positions will be copied, MetEngine won't take positions of other added addresses.
+> 💡 **Note:** Only the primary wallet's positions will be copied, MetEngine will not copy positions from any other added addresses.
