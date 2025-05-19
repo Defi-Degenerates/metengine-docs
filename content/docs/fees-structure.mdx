@@ -2,11 +2,20 @@
 title: Fees Structure
 description: Fees structure of Met Engine
 ---
-<Callout>Auto-copy LPing is currently free while in beta, including opening/closing positions, swaps (Jupiter charges a 0.1% fee for Ultra swaps), and fees on earned yield.</Callout>
 
-### Fees for Manually Opened LP positions (Not Auto Trade):
+### Fees Structure
 
-**1.5% LP Opening Fee** : A flat fee charged when opening an LP position **manually**. This unlocks access to premium features including **fee claiming**, **wallet tracking**, **position monitoring**, **impermanent loss tracking**, **market cap insights**, and **one-click exits**.
+**Tiered LP Opening Fee** : A volume-based fee charged when opening an LP position. This unlocks access to premium features including **fee claiming**, **wallet tracking**, **position monitoring**, **impermanent loss tracking**, **pool insights**, and **one-click exits**.
+
+| Position Size | Fee |
+| ------------- | --- |
+| 0-10 SOL      | 0.4% |
+| 10-25 SOL     | 0.35% |
+| 25-50 SOL     | 0.3% |
+| 50-75 SOL     | 0.25% |
+| 75+ SOL       | 0.2% |
+
+<Callout>**5-Minute Cooldown Period** : A cooldown period of 5 minutes per pool applies to prevent multiple re-openings of positions in same pool. (Applicable to Auto Copy LP only)</Callout>
 
 **0% Swap Fees** : All LP transactions use Jupiter Ultra to ensure low slippage and **protection from MEV**.
 
