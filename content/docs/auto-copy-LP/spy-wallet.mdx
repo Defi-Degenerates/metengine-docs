@@ -6,34 +6,36 @@ description: Get notified whenever wallets take LP positions
 
 MetEngine supports LP notifications, alerting you whenever tracked wallets take LP positions. You can track up to 5 wallets simultaneously!
 
-Follow these simple steps to set up the bot and start receiving LP notifications 👇 :
-## **Step 1: Start the Bot**
-Go to `/start` and click on the `Auto Trade` button to initiate the process.
+## Setting Up Wallet Tracking
+
+### Step 1: Start the Bot
+1. Open Telegram and go to [@met_engine_bot](https://t.me/met_engine_bot)
+2. Type `/start` and press enter
+3. Click on the `Auto Trade` button
 <img src="/wallet.png" alt="Main menu" width="500" height="500"></img>
-## **Step 2: Add a Wallet**
-Read the instructions displayed and click the `Add Wallet` button to add a wallet.
 
+### Step 2: Add Wallets
+1. From the Auto Copy Trade menu, click the `Add Wallet` button
 <img src="/cp2.png" alt="Track Wallet" width="500" height="500"></img>
-## **Step 3: Enter Wallet Details**
 
-Add the wallet using the following format:  
-**`Wallet_Name WalletAddress`**  
-For example: `AlphaWallet 5F3sa2TJ...`
-
+2. Enter wallet information using format: **`WalletName WalletAddress`**  
+Example: `AlphaWallet 5F3sa2TJ...`
 <img src="/cp3.png" alt="Add wallet" width="500" height="500"></img>
 
-## **Step 4: Toggle Notification Mode**
-- If you want to only receive notifications (without copying trades), ensure the wallet is set to 🔔 mode
-- If you want to copy trades AND receive notifications, set the wallet to ✅ mode
+3. Repeat to add up to 5 wallets
 
-You can add up to 5 wallets to your tracking list.
-
-## ✅ You're All Set!
+### Step 3: Set to Notification Mode
+1. To receive notifications without copying trades:
+   - Tap the wallet name to toggle to 🔔 mode
+   - In 🔔 mode, you'll only receive notifications
+   
+2. To both receive notifications AND copy trades:
+   - Tap the wallet name to toggle to ✅ mode
 <img src="/sw1.png" alt="Tracked wallets" width="500" height="500"></img>
 
-## **What Notifications Will You Receive?**
+## What You'll Receive in Notifications
 
-Once set up, you will receive LP notifications for the wallets you've added. The notification details will include:
+Each notification includes:
 
 - **Wallet Name** 
 - **Pool Name** with a link to Meteora
@@ -42,7 +44,18 @@ Once set up, you will receive LP notifications for the wallets you've added. The
 - **Strategy type**
 - Links to **Dexscreener** and **GmGn**
 
-### Example: Remove Liquidity Position Notification
+### Example Notification
 <img src="/n2.png" alt="Notification of tracked wallet" width="500" height="500"></img>
 
-With these steps, you'll be set up to receive timely LP position notifications from the wallets you're tracking.
+## Managing Tracked Wallets
+
+### Removing Wallets
+1. Click the `Delete Wallet` button
+2. You'll see a numbered list of your tracked wallets
+3. Input the number of the wallet you want to remove and press enter
+4. Wallet deleted successfully
+
+### Setting Wallets to Notification-Only Mode
+If you want to receive notifications without copying trades:
+1. Tap on the wallet name to toggle from ✅ to 🔔
+2. The wallet will remain in your tracking list but no positions will be copied
