@@ -40,26 +40,27 @@ Note: When you add a wallet, Auto Copy is enabled by default (✅).
 <img src="/cp6.png" alt="Configure menu" width="500" height="500"></img>
 
    - **Fixed Amount**: Always use the same SOL amount for every position
-     - Example: Set 0.5 SOL → Every trade uses exactly 0.5 SOL
+     > Example: Set 0.5 SOL → Every trade uses exactly 0.5 SOL
    
    - **Portfolio %**: Use a percentage of your current SOL balance
-     - Example: Set 10% → If you have 5 SOL, trade with 0.5 SOL per position
+     > Example: Set 10% → If you have 5 SOL, trade with 0.5 SOL per position
    
    - **Copy Trader Position %**: Copy a percentage of the target's trade amount
-     - Example: Target trades 1 SOL → Set 50% → You trade 0.5 SOL
-     - This is amount-based: percentage of their actual trade size
+     > Example: Target trades 1 SOL → Set 50% → You trade 0.5 SOL
    
    - **Same Proportion**: Mirror the same proportion of target's portfolio allocation
-     - Example: Target trades 10 SOL from their 100 SOL wallet (10% of portfolio) → You automatically trade 10% of YOUR portfolio
+     > Example: Target trades 10 SOL from their 100 SOL wallet (10% of portfolio) → You automatically trade 10% of YOUR portfolio
    
    - **Same Amount**: Copy the exact same SOL amount as the target trader
-     - Example: Target trades 1 SOL → You also trade 1 SOL
+     > Example: Target trades 1 SOL → You also trade 1 SOL
 
-3. For trader-dependent options (Copy Trader Position %, Same Proportion, Same Amount), you can set a **Max Amount** to limit position size:
-    - Example: If you set Max Amount to 2 SOL and the trader opens a 10 SOL position:
-    - With "Same Amount" selected, you'd only use 2 SOL instead of 10 SOL
-    - With "Copy Trader Position %" at 50%, you'd use 2 SOL instead of 5 SOL
-    - With "Same Proportion", you'd be capped at 2 SOL regardless of the calculated proportion
+For trader-dependent options (Copy Trader Position %, Same Proportion, Same Amount), you can set a **Max Amount** to limit position size (default is unlimited):
+    > Example: If you set Max Amount to 2 SOL and the trader opens a 10 SOL position:
+    >  - With "Same Amount" selected, you'd only use 2 SOL instead of 10 SOL
+    > - With "Copy Trader Position %" at 50%, you'd use 2 SOL instead of 5 SOL
+    > - With "Same Proportion", you'd be capped at 2 SOL regardless of the calculated proportion
+    
+    Note: Max Amount is only applicable to mentioned options. You can reset it to unlimited by pasting ∞ in input.
 
 ## Managing Wallets
 
