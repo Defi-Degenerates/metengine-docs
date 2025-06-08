@@ -8,12 +8,7 @@ description: FAQs
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
 ### What does an open/close position mean and should I swap the token manually?
-When you enter a token address into DLMM, the bot automatically swaps 50% of your SOL to the specified token using Jupiter for optimal pricing. When closing the position, it swaps the tokens and any generated fees back to SOL.
-</div>
-
-<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
-### How much does Met Engine charge?
-We charge volume-based fee on open LP positions via MetEngine (50% of which is shared with our partners). For more details, refer to our [Fee Structure](/docs/fees-structure).
+When you enter a token address into DLMM, the bot automatically swaps selected ratio of your SOL to the token using Jupiter for optimal pricing. When closing the position, it swaps the tokens and generated fees back to SOL.
 </div>
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
@@ -27,23 +22,45 @@ Yes, your wallet is self-custodial. You have full control over your private keys
 </div>
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### How much does MetEngine charge?
+We charge volume-based fee on open LP positions via MetEngine (50% of which is shared with our partners). For more details, refer to our [Fee Structure](/docs/fees-structure).
+</div>
+
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
 ### The bot created a position slightly lower than expected
 Meteora charges 0.05 SOL as refundable rent. Additionally, small amounts of SOL may be used for transaction fees and token swaps, which can result in a position slightly lower than the amount you preset.
 </div>
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
-### How many wallets can I track with Met Engine?
-You can track up to 3 wallets simultaneously.
+### How many wallets can I track or copywith MetEngine?
+You can add up to 5 wallets to track or copy simultaneously.
 </div>
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
-### How does Met Engine track wallets?
-The bot tracks all positions made by your primary wallet (copied with a preset SOL amount), and monitors positions taken by two additional wallets.
+### How does MetEngine track wallets?
+You can configure each wallet individually with different copy trade strategies, or simply monitor them for notifications without copying.
+</div>
+
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### What copy trade strategies are available?
+MetEngine offers multiple configuration options:
+- **Fixed Amount**: Always use the same SOL amount
+- **Portfolio %**: Use a percentage of your current SOL balance
+- **Copy Trader Position %**: Copy a percentage of the target's trade amount
+- **Same Proportion**: Mirror the same proportion of target's portfolio allocation
+- **Same Amount**: Copy the exact same SOL amount as the target
+</div>
+
+<div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
+### What is the Max Amount feature?
+The Max Amount feature acts as a safety cap for position sizes when using trader-dependent strategies (Copy Trader Position %, Same Proportion, Same Amount). It limits how much SOL can be used for a position, protecting you from unexpectedly large trades.
+
+For example, if you set a Max Amount of 2 SOL and a trader you're copying opens a 10 SOL position, you'll only use 2 SOL to that position regardless of your selected strategy.
 </div>
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
 ### What strategies are supported?
-We currently support Spot, BidAsk, and Curve strategies for manual LPing. The Auto LP feature can copy any strategy used by the primary wallet, including strategies like AST.
+We currently support Spot, BidAsk, and Curve strategies for manual LPing. The Auto LP feature can copy any strategy used by the tracked wallets, including strategies like AST.
 </div>
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
@@ -53,11 +70,11 @@ Yes, the bot supports all tokens that Meteora supports for liquidity provisionin
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
 ### Are there any additional fees beyond the SOL requirement?
-There are no hidden fees. You only pay standard Jupiter and Meteora fees as applicable. We sometimes apply market priority fees (e.g., Jito tips) for faster transaction execution, but you won't be charged anything extra by Met Engine.
+There are no hidden fees. You only pay standard Jupiter and Meteora fees as applicable. We sometimes apply market priority fees (e.g., Jito tips) for faster transaction execution, but you won't be charged anything extra by MetEngine.
 </div>
 
 <div style={{ backgroundColor: '#2c2c2c', padding: '15px', borderRadius: '10px' }}>
-### How do I import my private key?
+### How do I import my wallet to another choice (Phantom, Solflare, etc.)?
 You can export your private key from the bot by using the `/export` command. Keep this key safe and never share it. To import it into a wallet app like Phantom or Solflare:
 
 <ol>
