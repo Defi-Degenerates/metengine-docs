@@ -3,6 +3,7 @@ import { RootProvider } from "fumadocs-ui/provider";
 import { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Roboto } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -63,6 +64,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang="en" className={roboto.className} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <RootProvider>{children}</RootProvider>
+        <Analytics />
       </body>
     </html>
   );
