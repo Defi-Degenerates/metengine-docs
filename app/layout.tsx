@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "MetEngine",
     images: [
       {
-        url: "/met.jpeg",
+        url: "/metengine.svg",
         width: 800,
         height: 800,
         alt: "MetEngine",
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
       "MetEngine Docs",
     description:
       "One-click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
-    images: ["/met.jpeg"],
+    images: ["/metengine.svg"],
   },
   icons: {
-    icon: "/met.jpeg",
+    icon: "/metengine.svg",
   },
   robots: {
     index: true,

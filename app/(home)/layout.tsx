@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "MetEngine",
   description: "One - click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
   icons: {
-    icon: "/favicon.jpeg",
+    icon: "/metengine.svg",
   },
 };
 
