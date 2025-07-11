@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { source } from '@/lib/source';
 
 export const metadata: Metadata = {
-  title: "MetEngine",
+  title: "Docs | MetEngine",
   description: "One - click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
   icons: {
     icon: "/metengine.svg",

@@ -26,16 +26,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "MetEngine Docs",
+      "Docs | MetEngine",
     description:
       "One-click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
     url: "https://docs.metengine.xyz",
     siteName: "MetEngine",
     images: [
       {
-        url: "/metengine.svg",
-        width: 800,
-        height: 800,
+        url: "/ogImage.png",
         alt: "MetEngine",
       },
     ],
@@ -45,10 +43,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "MetEngine Docs",
+      "Docs | MetEngine",
     description:
       "One-click LP, Copy trade DLMM positions, track IL in Real-Time all from Telegram.",
-    images: ["/metengine.svg"],
+    images: ["/ogImage.png"],
   },
   icons: {
     icon: "/metengine.svg",
